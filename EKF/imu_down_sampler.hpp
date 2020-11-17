@@ -52,7 +52,7 @@ public:
 
 	bool update(const imuSample &imu_sample_new);
 
-	imuSample getDownSampledImuAndTriggerReset()
+	const imuSample &getDownSampledImuAndTriggerReset()
 	{
 		_do_reset = true;
 		return _imu_down_sampled;
